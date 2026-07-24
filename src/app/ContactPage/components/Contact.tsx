@@ -19,7 +19,7 @@ export default function Contact() {
             {t.contactPage.form.googleFormDescription}
           </p>
           <a
-            href="https://docs.google.com/forms/" // TODO: Replace with actual Google Form URL
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdWVf0tO6mvuiP0x7z3v16boa97w36dDBtgWZCUdbspJUisbA/viewform?usp=publish-editor" // TODO: Replace with actual Google Form URL
             target="_blank"
             rel="noopener noreferrer"
             className="px-12 py-4 bg-white text-black font-bold hover:bg-gray-200 transition-colors text-sm tracking-widest flex items-center gap-2"
