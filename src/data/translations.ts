@@ -20,6 +20,7 @@ export const translations = {
             bannerp:{
                 mission:"MISSION CONTINUED",
                 title:"CROWDFUNDING",
+                period:"期間",
                 goalFunds:"目標支援額",
                 goalFundsNumber:"¥1,500,000",
                 totalFunds:"総支援額",
@@ -340,6 +341,7 @@ export const translations = {
             bannerp: {
                 mission: "MISSION CONTINUED",
                 title: "CROWDFUNDING",
+                period: "Campaign Period",
                 goalFunds: "Funding Goal",
                 goalFundsNumber: "¥1,500,000",
                 totalFunds: "Total Raised",

@@ -56,6 +56,11 @@ export default function FundPage() {
                   {t.fundPage.bannerp.title}
                 </h1>
 
+                <div className="mb-8 text-sm font-mono uppercase tracking-wider text-gray-400">
+                  <span className="mr-3 text-gray-500">{t.fundPage.bannerp.period}</span>
+                  <span className="text-lg font-bold text-white">11/1~12/10</span>
+                </div>
+
                 <div className="text-sm text-gray-500 font-mono uppercase tracking-wider mb-2">
                   {t.fundPage.bannerp.goalFunds} 
                 </div>
