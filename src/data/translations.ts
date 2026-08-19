@@ -17,8 +17,19 @@ export const translations = {
             }
         },
         fundPage: {
-            banner: {
-                mission: "MISSION ACCOMPLISHED",
+            bannerp:{
+                mission:"MISSION CONTINUED",
+                title:"CROWDFUNDING",
+                goalFunds:"目標支援額",
+                goalFundsNumber:"¥1,500,000",
+                totalFunds:"総支援額",
+                supporters:"支援者数",
+                message:"皆様のご支援を期待しています。"
+                
+
+            },
+            banner:{
+                mission: "MISSION ACCOMPLISHEDDDD",
                 title: "CROWDFUNDING",
                 success: "SUCCESS",
                 description: "12月15日をもって、クラウドファンディングは終了いたしました。多大なるご支援、誠にありがとうございました。",
@@ -326,6 +337,15 @@ export const translations = {
             }
         },
         fundPage: {
+            bannerp: {
+                mission: "MISSION CONTINUED",
+                title: "CROWDFUNDING",
+                goalFunds: "Funding Goal",
+                goalFundsNumber: "¥1,500,000",
+                totalFunds: "Total Raised",
+                supporters: "Supporters",
+                message: "We look forward to your support."
+            },
             banner: {
                 mission: "MISSION ACCOMPLISHED",
                 title: "CROWDFUNDING",

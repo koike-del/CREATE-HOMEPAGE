@@ -12,12 +12,10 @@ type Sponsor = {
 }
 
 const sponsors: Sponsor[] = [
-  { name: "サイレックス・テクノロジー株式会社", logo: "/silex.png", url: "https://www.silex.jp/", id: "01" },
-  { name: "工機ホールディングス株式会社", logo: "/hikoki.jpg", url: "https://www.koki-holdings.co.jp/", id: "02" },
-  { name: "ZONeエナジー", logo: "/zone.jpg", url: "https://zone-energy.jp/", id: "03" },
-  { name: "NEWS COMPANY", logo: "/newscompany.png", url: "https://news-carbon.com/", id: "04" },
-  { name: "ANSYS", logo: "/ANSYS_logo_whiteback.png", url: "https://www.ansys.com/ja-jp", id: " 05" },
-  { name: "JLCPCB", logo: "/JLCPCB.jpg", url: "https://jlcpcb.com/jp", id: "06"},
+  { name: "サイレックス・テクノロジー株式会社", logo: "/silex.png", url: "https://example.com", id: "01" },
+  { name: "工機ホールディングス株式会社", logo: "/hikoki.jpg", url: "https://example.com", id: "02" },
+  { name: "ZONeエナジー", logo: "/zone.jpg", url: "https://example.com", id: "03" },
+  { name: "NEWS COMPANY", logo: "/newscompany.png", url: "https://example.com", id: "04" },
 ]
 
 const supportingOrganizations = [
