@@ -283,10 +283,10 @@ export const projectsData = [
   },
   {
     id: "23",
-    name: "C-99L",
+    name: "C-99L(白Ⅱ)",
     period: "2026/08予定",
     category: "ロケット",
-    thumbnail: "/99.png",
+    thumbnail: "/C-99L.png",
     altitude: "N/A",
     length: "N/A",
     weight: "N/A",

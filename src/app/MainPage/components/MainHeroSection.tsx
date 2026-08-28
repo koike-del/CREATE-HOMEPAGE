@@ -14,6 +14,18 @@ export default function MainHeroSection() {
     const mediaFiles = [
         {
             type: "video",
+            src: "/L-7i.mp4",
+            caption: "ENGINE 'L-7i'",
+            sub: "NEW ENGINE",
+        },
+        {
+            type: "video",
+            src: "/103J.mp4",
+            caption: "C-103J †bloody phoenix†",
+            sub: "HYBRID ROCKET",
+        },
+        {
+            type: "video",
             src: "/ScreenRecording_08-31-2025 21-51-40_1.mov",
             caption: "ENGINE 'J-6i'",
             sub: "NEW ENGINE"
