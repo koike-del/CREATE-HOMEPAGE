@@ -7,6 +7,30 @@ import { useLanguage } from "@/context/LanguageContext"
 export default function FundSupport() {
   const { t } = useLanguage();
 
+  const renderFormattedText = (text: string) => {
+    const lines = text.split('\n').filter(Boolean)
+
+    return lines.map((line, index) => {
+      const segments = line.split(/(\*\*.*?\*\*)/g).filter(Boolean)
+
+      return (
+        <p key={index} className="text-lg text-gray-300 leading-relaxed mb-4 last:mb-0 whitespace-pre-line">
+          {segments.map((segment, segmentIndex) => {
+            if (segment.startsWith('**') && segment.endsWith('**')) {
+              return (
+                <strong key={`${segment}-${segmentIndex}`} className="font-bold text-white">
+                  {segment.slice(2, -2)}
+                </strong>
+              )
+            }
+
+            return <span key={`${segment}-${segmentIndex}`}>{segment}</span>
+          })}
+        </p>
+      )
+    })
+  }
+
   return (
     <section className="py-12 relative">
       <div className="px-4 text-white">
@@ -24,9 +48,9 @@ export default function FundSupport() {
             {/* Left Column: Description & Actions */}
             <div>
               <div className="bg-zinc-950 border border-white/10 p-8 mb-8">
-                <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                  {t.fundPage.support.description}
-                </p>
+                <div className="mb-8 space-y-2">
+                  {renderFormattedText(t.fundPage.support.description)}
+                </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg" className="bg-white hover:bg-gray-200 text-black font-bold tracking-wider h-14 rounded-none">

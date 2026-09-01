@@ -8,7 +8,6 @@ import CompletedMissions from "./MainPage/components/CompletedMissions"
 import DomeGallery from "./MainPage/components/DoomPhoto"
 import RocketOverview from "./MainPage/components/RocketOverView"
 import Social from "./MainPage/components/Social"
-import CrowdfundingBanner from "./MainPage/components/CrowdfundingBanner"
 import { useLanguage } from "@/context/LanguageContext"
 
 export default function TopPage() {
@@ -17,7 +16,6 @@ export default function TopPage() {
   return (
     <div className="flex flex-col min-h-screen relative bg-black">
       <Header />
-      <CrowdfundingBanner />
       <main className="flex-1">
         <GalleryViewer />
       </main>

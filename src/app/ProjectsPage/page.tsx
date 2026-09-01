@@ -5,6 +5,7 @@ import { projectsData } from "./ProjectData"
 import Footer from "@/components/ui/Footer"
 import Header from "@/components/ui/Header"
 import Image from "next/image"
+import Link from "next/link"
 import { Disc } from "lucide-react"
 
 import { useLanguage } from "@/context/LanguageContext"
@@ -188,6 +189,17 @@ export default function ProjectsPage() {
                       <p className="text-lg text-gray-300 leading-relaxed font-light">
                         {language === 'en' && project.captionEn ? project.captionEn : project.caption}
                       </p>
+
+                      {project.id === "29" && (
+                        <div className="mt-6">
+                          <Link
+                            href="/Fund&SponsorPage"
+                            className="inline-flex items-center gap-2 rounded-full border border-emerald-400/60 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-300 transition hover:bg-emerald-400/20"
+                          >
+                            SUPPORT US
+                          </Link>
+                        </div>
+                      )}
                     </div>
 
                     <div className="space-y-4 font-mono text-sm border-l border-white/10 pl-6">

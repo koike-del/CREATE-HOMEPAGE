@@ -21,9 +21,21 @@ export default function CrowdfundingBanner() {
             <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
               {t.fundPage.bannerp.title}
             </h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-gray-400 md:text-base">
-              {t.fundPage.bannerp.message}
-            </p>
+            <div className="mt-2 max-w-xl text-sm leading-relaxed text-gray-400 md:text-base">
+              {/* 1. badge と title を大文字（uppercase）で表示 */}
+              <div className="mb-3 font-bold uppercase text-gray-200">
+                {t.fundPage.bannerp.message.badge}
+                <br />
+                {t.fundPage.bannerp.message.title}
+              </div>
+              <div className="mb-3 font-medium text-emerald-400">
+                {t.fundPage.bannerp.message.body}
+                <br />
+              </div>
+              <div className="mt-2 font-medium text-emerald-400">
+                {t.fundPage.bannerp.message.cta}
+              </div>
+            </div>
           </div>
         </div>
 

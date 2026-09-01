@@ -92,10 +92,26 @@ export default function FundPage() {
               {/*light column*/}
               <div className="lg:col-span-7 relative z-10 lg:pl-12 lg:border-l border-white/10 lg:self-stretch lg:flex lg:items-center">
                 <div className="prose prose-invert max-w-none">
-                  <p className="text-xl md:text-2xl text-gray-200 leading-relaxed font-light mb-8">
-                    {t.fundPage.bannerp.message}
-                  </p>
-
+                  {t.fundPage.bannerp.message.badge && (
+                    <p className="text-xl md:text-2xl text-gray-200 leading-relaxed font-light mb-4">
+                      <span className="font-bold text-white">{t.fundPage.bannerp.message.badge}</span>
+                    </p>
+                  )}
+                  {t.fundPage.bannerp.message.title && (
+                    <p className="text-xl md:text-2xl text-gray-200 leading-relaxed font-light mb-4">
+                      <span className="font-bold text-white">{t.fundPage.bannerp.message.title}</span>
+                    </p>
+                  )}
+                  {t.fundPage.bannerp.message.body.map((paragraph, index) => (
+                    <p key={index} className="text-xl md:text-2xl text-gray-200 leading-relaxed font-light mb-8">
+                      {paragraph}
+                    </p>
+                  ))}
+                  {t.fundPage.bannerp.message.cta && (
+                    <p className="text-xl md:text-2xl text-emerald-300 leading-relaxed font-light">
+                      {t.fundPage.bannerp.message.cta}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

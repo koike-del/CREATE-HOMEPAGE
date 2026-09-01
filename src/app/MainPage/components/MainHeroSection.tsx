@@ -3,13 +3,42 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function MainHeroSection() {
     const { t } = useLanguage();
     const [index, setIndex] = useState(0);
     const slideDuration = 6000;
+
+    const renderSupportMessage = (message: {
+        badge?: string;
+        title: string;
+        body: string[];
+        cta: string;
+    }) => (
+        <>
+            {message.badge && (
+                <p className="leading-relaxed text-zinc-200">
+                    <strong className="font-bold text-white">{message.badge}</strong>
+                </p>
+            )}
+            {message.title && (
+                <p className="leading-relaxed text-zinc-200">
+                    <strong className="font-bold text-white">{message.title}</strong>
+                </p>
+            )}
+            {message.body.map((paragraph, index) => (
+                <p key={`${paragraph}-${index}`} className="leading-relaxed text-zinc-200">
+                    {paragraph}
+                </p>
+            ))}
+            {message.cta && (
+                <p className="leading-relaxed text-emerald-300">{message.cta}</p>
+            )}
+        </>
+    );
 
     const mediaFiles = [
         {
@@ -88,25 +117,53 @@ export default function MainHeroSection() {
                 </motion.div>
             </AnimatePresence>
 
-            {/* Main Title */}
-            {/* <div className="absolute inset-0 flex flex-col justify-center items-center z-20 pointer-events-none">
-                <motion.h1
-                    className="text-6xl md:text-9xl font-bold text-white tracking-widest mix-blend-overlay opacity-90"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+            <div className="absolute inset-0 z-20 flex items-end pb-20 md:pb-16">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="w-full max-w-[1600px] mx-auto px-5 sm:px-8 md:px-12 lg:px-16"
                 >
-                    {t.topPage.hero.title}
-                </motion.h1>
-                <motion.p
-                    className="mt-4 text-sm md:text-xl text-white/80 font-mono tracking-[0.5em] uppercase"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.8 }}
-                >
-                    {t.topPage.hero.subtitle}
-                </motion.p>
-            </div> */}
+                    <div className="max-w-[min(90vw,42rem)] rounded-2xl border border-white/15 bg-black/30 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-sm md:p-8">
+                        <div className="mb-4 inline-flex items-center gap-3 text-[10px] font-mono uppercase tracking-[0.26em] text-emerald-300">
+                            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                            {t.fundPage.bannerp.mission}
+                        </div>
+
+                        <h1 className="max-w-full whitespace-nowrap text-3xl font-black leading-[0.95] tracking-tight text-white md:text-5xl lg:text-6xl">
+                            {t.fundPage.bannerp.title}
+                        </h1>
+
+                        <div className="mt-4 max-w-lg space-y-3 text-sm md:text-base">
+                            {renderSupportMessage(t.topPage.crowdfunding.message)}
+                        </div>
+
+                        <div className="mt-6 flex flex-wrap gap-3 text-[10px] uppercase tracking-[0.18em] text-zinc-200 md:text-xs">
+                            <div className="rounded-full border border-white/15 bg-white/5 px-3 py-2">
+                                <span className="mr-2 text-zinc-400">{t.fundPage.bannerp.period}</span>
+                                <span className="font-bold text-white">11/1~12/10</span>
+                            </div>
+                            <div className="rounded-full border border-white/15 bg-white/5 px-3 py-2">
+                                <span className="mr-2 text-zinc-400">{t.fundPage.bannerp.goalFunds}</span>
+                                <span className="font-bold text-white">{t.fundPage.bannerp.goalFundsNumber}</span>
+                            </div>
+                        </div>
+
+                        <div className="mt-8 flex flex-wrap items-center gap-4">
+                            <Link
+                                href="/Fund&SponsorPage"
+                                className="group inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/50 bg-emerald-400 px-5 py-3 text-sm font-bold uppercase tracking-[0.2em] text-black transition hover:bg-emerald-300"
+                            >
+                                {t.fundPage.support.title}
+                                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                            </Link>
+                            <div className="text-xs uppercase tracking-[0.24em] text-zinc-300">
+                                {t.topPage.hero.scroll}
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+            </div>
 
             {/* Tech Details - Corners */}
             <div className="absolute top-24 left-8 md:left-16 z-20 hidden md:block">
@@ -127,32 +184,7 @@ export default function MainHeroSection() {
             </div>
 
             {/* Bottom Info & Controls */}
-            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16 z-30 flex justify-between items-end">
-                {/* Current Slide Info */}
-                <div className="flex flex-col space-y-2">
-                    <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <div className="flex items-center space-x-4">
-                            <span className="text-4xl md:text-6xl font-light text-white font-mono">
-                                {String(index + 1).padStart(2, '0')}
-                            </span>
-                            <div className="h-12 w-[1px] bg-white/20" />
-                            <div className="flex flex-col">
-                                <span className="text-sm md:text-base text-white font-bold tracking-wider">
-                                    {mediaFiles[index].caption}
-                                </span>
-                                <span className="text-xs text-white/50 font-mono tracking-widest uppercase">
-                                    {mediaFiles[index].sub}
-                                </span>
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-
+            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16 z-30 flex justify-end items-end">
                 {/* Progress Bar */}
                 <div className="absolute bottom-0 left-0 h-1 bg-white/10 w-full">
                     <motion.div

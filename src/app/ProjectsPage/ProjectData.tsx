@@ -356,4 +356,17 @@ export const projectsData = [
     captionEn: "This engine is an L-type engine intended for installation in the C-99L (an advanced variant of the 24B). It has successfully achieved an increase in initial thrust, a reduction in combustion vibrations, and a significant reduction in weight. Furthermore, in addition to the various core technologies validated in the J-6i-v, it incorporates a new forward combustion chamber.",
     periodEn: "2026/04/19",
   },
+  {
+    id: "29",
+    name: "C-107m",
+    period: "2027/08/予定",
+    category: "ロケット",
+    thumbnail: "N/A",
+    altitude: "N/A",
+    length: "N/A",
+    weight: "N/A",
+    caption: "自作エンジンM-8i、フェアリング解放機構、カメラを搭載予定。高度3776m以上の「富士山越え」を目指す。",
+    captionEn: "Equipped with custom M-8i engine, fairing separation mechanism, and onboard camera. Targeting high-altitude launch exceeding 3,776 m (Mt. Fuji level).",
+    periodEn: "2027/08/予定",
+  },
 ]

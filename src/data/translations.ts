@@ -25,9 +25,15 @@ export const translations = {
                 goalFundsNumber:"¥1,500,000",
                 totalFunds:"総支援額",
                 supporters:"支援者数",
-                message:"皆様のご支援を期待しています。"
-                
-
+                message: {
+                    badge: "【目指すは富士山越えの青空！】",
+                    title: "新型大型ロケット「C-107M」開発プロジェクト",
+                    body: [
+                        "私たちは最終目標である「高度100kmの宇宙到達」へ向け、新型自作エンジン「M-8i」や機体回収用カメラを搭載した大型機「C-107M」の開発に挑んでいます。",
+                        "富士山の標高を超える「高度3,776m」への挑戦を成功させるため、皆様の温かいご支援をよろしくお願いいたします。"
+                    ],
+                    cta: "ご支援はこちら"
+                }
             },
             banner:{
                 mission: "MISSION ACCOMPLISHEDDDD",
@@ -70,7 +76,7 @@ export const translations = {
             support: {
                 title: "SUPPORT US",
                 subtitle: "ご支援のお願い",
-                description: "CREATEはハイブリッドロケットの設計・開発を行っています。東工大基金を通じたご支援をお願いいたします。",
+                description: "**【目指すは富士山越えの青空！】**\n\n**新型大型ロケット「C-107M」開発プロジェクト**\n\n私たちは最終目標である「高度100kmの宇宙到達」へ向け、新型自作エンジン「M-8i」や機体回収用カメラを搭載した大型機「C-107M」の開発に挑んでいます。\n\n富士山の標高を超える「高度3,776m」への挑戦を成功させるため、皆様の温かいご支援をよろしくお願いいたします。",
                 jpForm: "日本語フォーム",
                 enForm: "英語フォーム",
                 allocation: {
@@ -112,6 +118,16 @@ export const translations = {
                 scroll: "Scroll",
                 galleryTitle: "未来を創る。CREATE",
                 gallerySubtitle: "17年の軌跡"
+            },
+            crowdfunding: {
+                message: {
+                    badge: "",
+                    title: "新型大型ロケット「C-107M」開発プロジェクト",
+                    body: [
+                        "宇宙への挑戦を支えるご支援を募っています。"
+                    ],
+                    cta: "支援はこちら"
+                }
             },
             ongoing: {
                 title: "ONGOING MISSIONS",
@@ -346,7 +362,15 @@ export const translations = {
                 goalFundsNumber: "¥1,500,000",
                 totalFunds: "Total Raised",
                 supporters: "Supporters",
-                message: "We look forward to your support."
+                message: {
+                    badge: "Our goal is to reach the sky above Mt. Fuji!",
+                    title: "Development Project for the New Large Rocket \"C-107M\"",
+                    body: [
+                        "We are working toward our ultimate objective of reaching an altitude of 100 km, developing the new large vehicle \"C-107M\" equipped with a self-made engine \"M-8i\" and a recovery camera.",
+                        "To successfully complete the challenge of exceeding Fuji's altitude of 3,776 m, we sincerely appreciate your warm support."
+                    ],
+                    cta: "Support us"
+                }
             },
             banner: {
                 mission: "MISSION ACCOMPLISHED",
@@ -389,7 +413,7 @@ export const translations = {
             support: {
                 title: "SUPPORT US",
                 subtitle: "Support Our Mission",
-                description: "CREATE is designing and developing hybrid rockets. To support our mission via the Tokyo Institute of Technology Fund, please initiate the support protocol below.",
+                description: `**【Our goal is to reach the sky above Mt. Fuji!】**\n\n**Development Project for the New Large Rocket "C-107M"**\n\nWe are working toward our ultimate objective of reaching an altitude of 100 km, developing the new large vehicle "C-107M" equipped with a self-made engine "M-8i" and a recovery camera.\n\nTo successfully complete the challenge of exceeding Fuji's altitude of 3,776 m, we sincerely appreciate your warm support.`,
                 jpForm: "JP FORM",
                 enForm: "EN FORM",
                 allocation: {
@@ -431,6 +455,16 @@ export const translations = {
                 scroll: "Scroll",
                 galleryTitle: "CREATE THE FUTURE",
                 gallerySubtitle: "17 YEARS TRAJECTORY"
+            },
+            crowdfunding: {
+                message: {
+                    badge: "",
+                    title: "Support our mission",
+                    body: [
+                        "We are seeking support for our next space challenge."
+                    ],
+                    cta: "Support us"
+                }
             },
             ongoing: {
                 title: "ONGOING MISSIONS",
