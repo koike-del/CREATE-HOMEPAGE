@@ -14,17 +14,17 @@ export default function RocketOverview() {
   const specifications: Specification[] = [
     {
       label: t.topPage.rocket.specs.altitude,
-      value: "N/A",
-      unit: ""
+      value: "580",
+      unit: "m"
     },
     {
       label: t.topPage.rocket.specs.length,
-      value: "2,252",
+      value: "2,326",
       unit: "mm"
     },
     {
       label: t.topPage.rocket.specs.mass,
-      value: "17.105",
+      value: "19.4",
       unit: "kg"
     }
   ];
@@ -84,7 +84,7 @@ export default function RocketOverview() {
               {/* Main Image */}
               <div
                 className="w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: `url(/83.jpg)` }}
+                style={{ backgroundImage: `url(/C-99L3x4.png)` }}
               />
 
               {/* Overlay Gradient */}

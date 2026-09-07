@@ -26,28 +26,21 @@ export default function OngoingMissions() {
       // timeOnOrbit: t.topPage.ongoing.missions[0].time,
       caption: t.topPage.ongoing.missions[0].caption,
       image: "/IMG_7241.jpg", // Rocket Launch
-      launchSchedule: "2026.03"
+      launchSchedule: "2027.03"
     },
     {
       name: t.topPage.ongoing.missions[1].name,
       // timeOnOrbit: t.topPage.ongoing.missions[1].time,
       caption: t.topPage.ongoing.missions[1].caption,
       image: "/IMG_0260.jpg", // Avionics
-      launchSchedule: "2026.08"
-    },
-    {
-      name: t.topPage.ongoing.missions[2].name,
-      // timeOnOrbit: t.topPage.ongoing.missions[2].time,
-      caption: t.topPage.ongoing.missions[2].caption,
-      image: "/gse.jpg", // GSE
-      launchSchedule: "2026.11"
+      launchSchedule: "2027.08"
     }
   ];
 
   const statistics: Statistics = {
-    ongoing: 5,
-    completed: 21,
-    succeeded: 16
+    ongoing: 2,
+    completed: 24,
+    succeeded: 19
   };
 
   return (
