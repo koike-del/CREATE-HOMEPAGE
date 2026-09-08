@@ -290,8 +290,8 @@ export const projectsData = [
     altitude: "580m",
     length: "2326mm",
     weight: "19.4kg",
-    caption: "自作エンジン、バルブシステムによる切り離し機構、動翼を搭載予定。",
-    captionEn: "It is planned to be equipped with a custom-built engine, a separation mechanism utilising a valve system, and moving wings.",
+    caption: "「動翼によるロール角維持」と「切り離し×シャッター機構の開発」をミッションに開発された機体。規定の対気速度に届かなかったため動翼制御は開始されなかったものの、フェイルセーフ機能は正常に作動し、動翼は0°に固定された。また、切り離し×シャッター機構の動作、ランチクリア、パラシュートの開傘、および飛行データを含む機体の一部回収に成功した。",
+    captionEn: "This locket was developed with the missions of ‘maintaining roll angle using movable control fins’ and ‘developing a separation and shutter mechanism’. Although the movable control fins were not activated as the rocket failed to reach the specified airspeed, the fail-safe function operated normally and the control fins were locked at 0°. Furthermore, the operation of the separation and shutter mechanism, the launch clearance, the deployment of the parachute, and the partial recovery of the locket—including flight data—were all successful.",
     periodEn: "2026/08",
   },
   {

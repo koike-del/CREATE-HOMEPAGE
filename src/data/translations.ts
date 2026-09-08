@@ -140,7 +140,7 @@ export const translations = {
                 specsLabel: "TECHNICAL SPECIFICATIONS",
                 modelName: "C-99L",
                 codeName: "CODE: 白Ⅱ",
-                description: "自作エンジン、バルブシステムによる切り離し機構、動翼を搭載。機体はランチクリア後正常に飛翔，パラシュートの展開に成功し着水．一部機体の回収，ならびに飛行データの回収にも成功した．",
+                description: "「動翼によるロール角維持」と「切り離し×シャッター機構の開発」をミッションに開発された機体。規定の対気速度に届かなかったため動翼制御は開始されなかったものの、フェイルセーフ機能は正常に作動し、動翼は0°に固定された。また、切り離し×シャッター機構の動作、ランチクリア、パラシュートの開傘、および飛行データを含む機体の一部回収に成功した。",
                 specs: {
                     altitude: "MAX ALTITUDE",
                     length: "TOTAL LENGTH",
@@ -444,7 +444,7 @@ export const translations = {
                 specsLabel: "TECHNICAL SPECIFICATIONS",
                 modelName: "C-99L",
                 codeName: "CODE: 白Ⅱ",
-                description: "The rocket was equipped with a custom-built engine, a separation mechanism utilising a valve system, and movable fins. Following clearance for launch, the aircraft flew normally, successfully deployed its parachute and landed on the water. We also successfully recovered some of the rocket and retrieved the flight data.",
+                description: "This locket was developed with the missions of ‘maintaining roll angle using movable control fins’ and ‘developing a separation and shutter mechanism’. Although the movable control fins were not activated as the rocket failed to reach the specified airspeed, the fail-safe function operated normally and the control fins were locked at 0°. Furthermore, the operation of the separation and shutter mechanism, the launch clearance, the deployment of the parachute, and the partial recovery of the locket—including flight data—were all successful.",
                 specs: {
                     altitude: "MAX ALTITUDE",
                     length: "TOTAL LENGTH",
