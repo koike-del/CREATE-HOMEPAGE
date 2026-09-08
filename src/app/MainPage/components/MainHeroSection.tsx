@@ -14,6 +14,12 @@ export default function MainHeroSection() {
     const mediaFiles = [
         {
             type: "video",
+            src: "/99launch.mp4",
+            caption: "C-99L '白Ⅱ'",
+            sub: "HYBRID ROCKET",
+        },
+        {
+            type: "video",
             src: "/L-7i.mp4",
             caption: "ENGINE 'L-7i'",
             sub: "NEW ENGINE",
