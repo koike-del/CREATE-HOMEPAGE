@@ -138,19 +138,14 @@ export const translations = {
                 },
                 missions: [
                     {
-                        name: "C-103J MISSION",
-                        time: "MAR 2026",
-                        caption: "2025年度新入生機体。新型分離機構に挑戦。"
+                        name: "C-109 MISSION",
+                        time: "MAR 2027",
+                        caption: "2025年度新入生機体。"
                     },
                     {
-                        name: "C-97J MISSION",
+                        name: "C-107M MISSION",
                         time: "AUG 2026",
-                        caption: "次世代バルブシステム＋自作エンジン搭載機体。"
-                    },
-                    {
-                        name: "C-101J MISSION",
-                        time: "NOV 2026",
-                        caption: "新姿勢制御システム/リアルタイム映像伝送の検証。"
+                        caption: "自作エンジン、フェアリング解放機構、高度3776m以上の「富士山越え」を目指す。"
                     }
                 ]
             },
@@ -171,9 +166,9 @@ export const translations = {
             },
             rocket: {
                 specsLabel: "TECHNICAL SPECIFICATIONS",
-                modelName: "C-83LM",
-                codeName: "CODE: KEY-CHAN",
-                description: "機体高高度化に向けて開発した機体。「バルブシステム×自作エンジンの開発」「縦型開放機構×リーフィング機構の開発」に挑戦した。飛翔中のエンジントラブルにより、推力を失い海に落下したため、フルサクセスの達成はならなかった。機構および自作エンジンの地上試験には成功した。",
+                modelName: "C-99L",
+                codeName: "CODE: 白Ⅱ",
+                description: "「動翼によるロール角維持」と「切り離し×シャッター機構の開発」をミッションに開発された機体。規定の対気速度に届かなかったため動翼制御は開始されなかったものの、フェイルセーフ機能は正常に作動し、動翼は0°に固定された。また、切り離し×シャッター機構の動作、ランチクリア、パラシュートの開傘、および飛行データを含む機体の一部回収に成功した。",
                 specs: {
                     altitude: "MAX ALTITUDE",
                     length: "TOTAL LENGTH",
@@ -475,19 +470,14 @@ export const translations = {
                 },
                 missions: [
                     {
-                        name: "C-103J MISSION",
-                        time: "MAR 2026",
-                        caption: "2025 Freshman Project. Challenging a new separation mechanism."
+                        name: "C-109 MISSION",
+                        time: "MAR 2027",
+                        caption: "2026 Freshman Project."
                     },
                     {
-                        name: "C-97J MISSION",
-                        time: "AUG 2026",
-                        caption: "Equipped with next-gen valve system & custom engine."
-                    },
-                    {
-                        name: "C-101J MISSION",
-                        time: "NOV 2026",
-                        caption: "Verification of new attitude control system / real-time video transmission."
+                        name: "C-107M MISSION",
+                        time: "AUG 2027",
+                        caption: "custom engine & fairing release mechanism, aiming to 'cross Mt.Fuji' more an altitude of 3776m"
                     }
                 ]
             },
@@ -508,9 +498,9 @@ export const translations = {
             },
             rocket: {
                 specsLabel: "TECHNICAL SPECIFICATIONS",
-                modelName: "C-83LM",
-                codeName: "CODE: KEY-CHAN",
-                description: "Equipped with our largest custom engine LM5-i and first-ever reefing mechanism.",
+                modelName: "C-99L",
+                codeName: "CODE: 白Ⅱ",
+                description: "This locket was developed with the missions of ‘maintaining roll angle using movable control fins’ and ‘developing a separation and shutter mechanism’. Although the movable control fins were not activated as the rocket failed to reach the specified airspeed, the fail-safe function operated normally and the control fins were locked at 0°. Furthermore, the operation of the separation and shutter mechanism, the launch clearance, the deployment of the parachute, and the partial recovery of the locket—including flight data—were all successful.",
                 specs: {
                     altitude: "MAX ALTITUDE",
                     length: "TOTAL LENGTH",

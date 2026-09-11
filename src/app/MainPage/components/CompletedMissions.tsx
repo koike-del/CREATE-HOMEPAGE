@@ -13,6 +13,20 @@ interface CompletedMission {
 
 const completedMissions: CompletedMission[] = [
   {
+    mission: "C-99L",
+    launchSite: "NOSIRO,AKITA",
+    launchDate: "AUG 18,2026",
+    payload: "Atmospheric Probe",
+    status: "success"
+  },
+  {
+    mission: "C-103J",
+    launchSite: "O-SIMA.TOKYO",
+    launchDate: "MAR 27,2026",
+    payload: "Atmospheric Probe",
+    status: "success"
+  },
+  {
     mission: "C-83LM",
     launchSite: "NOSIRO,AKITA",
     launchDate: "AUG 22, 2025",
